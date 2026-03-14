@@ -1,28 +1,21 @@
-// Smooth scrolling
-
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
-    anchor.addEventListener("click", function (e) {
+    anchor.addEventListener("click", function(e) {
 
         e.preventDefault();
 
-        document
-            .querySelector(this.getAttribute("href"))
-            .scrollIntoView({
-                behavior: "smooth"
-            });
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        });
 
     });
 
 });
 
 
-
-// Contact form message
-
 const form = document.getElementById("contactForm");
 
-form.addEventListener("submit", function (e) {
+form.addEventListener("submit", function(e) {
 
     e.preventDefault();
 

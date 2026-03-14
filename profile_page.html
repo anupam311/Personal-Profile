@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anupam Portfolio</title>
@@ -9,27 +10,35 @@
     <link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <header>
+<header>
+
+    <div class="container header-container">
 
         <h2 class="logo">Anupam</h2>
 
-        <nav id="navbar">
+        <nav>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
+            <a href="#journey">Journey</a>
             <a href="#contact">Contact</a>
         </nav>
 
-    </header>
+    </div>
+
+</header>
 
 
-    <!-- HERO -->
+<!-- HERO -->
 
-    <section class="hero">
+<section class="hero">
+
+    <div class="container hero-container">
 
         <div class="hero-text">
 
@@ -43,11 +52,13 @@
 
             <div class="hero-buttons">
 
-                <a href="https://github.com/anupam311" target="_blank">
+                <a href="resume.pdf" class="btn">Download Resume</a>
+
+                <a href="https://github.com/anupam311" target="_blank" class="btn secondary">
                     GitHub
                 </a>
 
-                <a href="https://www.linkedin.com/in/anupam-chaudhary-358800387/" target="_blank">
+                <a href="https://www.linkedin.com/in/anupam-chaudhary-358800387/" target="_blank" class="btn secondary">
                     LinkedIn
                 </a>
 
@@ -57,86 +68,98 @@
 
         <div class="hero-image">
 
-            <img
-                src="https://avatars.githubusercontent.com/u/230934852?s=400&u=cf19b043455e6c27d211f69140c62df0eceda531&v=4"
-                alt="profile"
-            >
+            <img src="https://avatars.githubusercontent.com/u/230934852?s=400&v=4" alt="profile">
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ABOUT -->
+<!-- STATS -->
 
-    <section id="about" class="about section">
+<section class="stats">
+
+    <div class="container stats-container">
+
+        <div class="stat">
+            <h3>5+</h3>
+            <p>Projects Built</p>
+        </div>
+
+        <div class="stat">
+            <h3>8+</h3>
+            <p>Technologies</p>
+        </div>
+
+        <div class="stat">
+            <h3>20+</h3>
+            <p>GitHub Repositories</p>
+        </div>
+
+        <div class="stat">
+            <h3>500+</h3>
+            <p>Hours of Coding</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about" class="section">
+
+    <div class="container">
 
         <h2>About Me</h2>
 
-        <p>
+        <p class="about-text">
             I'm Anupam, a BTech student specializing in Artificial Intelligence and Machine Learning.
             I enjoy building full-stack web applications using Python and Flask while continuously
-            improving my problem-solving and programming skills.
+            improving my programming and problem-solving skills.
 
-            My goal is to become a backend and AI engineer capable of building scalable intelligent
-            applications.
+            My goal is to become a backend and AI engineer capable of building intelligent and scalable systems.
         </p>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- SKILLS -->
+<!-- SKILLS -->
 
-    <section id="skills" class="skills section">
+<section id="skills" class="section">
+
+    <div class="container">
 
         <h2>Skills</h2>
 
         <div class="skills-container">
 
-            <div class="card">
-                HTML
-                <br>
-                <small>Intermediate</small>
-            </div>
-
-            <div class="card">
-                CSS
-                <br>
-                <small>Intermediate</small>
-            </div>
-
-            <div class="card">
-                JavaScript
-                <br>
-                <small>Intermediate</small>
-            </div>
-
-            <div class="card">
-                Python
-                <br>
-                <small>Intermediate</small>
-            </div>
-
-            <div class="card">
-                Flask
-                <br>
-                <small>Intermediate</small>
-            </div>
-
-            <div class="card">
-                SQL / PostgreSQL
-                <br>
-                <small>Intermediate</small>
-            </div>
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">Python</div>
+            <div class="card">Flask</div>
+            <div class="card">SQL</div>
+            <div class="card">Git</div>
+            <div class="card">REST APIs</div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- PROJECTS -->
+<!-- PROJECTS -->
 
-    <section id="projects" class="projects section">
+<section id="projects" class="section">
+
+    <div class="container">
 
         <h2>Projects</h2>
 
@@ -146,21 +169,15 @@
 
                 <h3>Flask To-Do App</h3>
 
-                <p>
-                    Task management web application with user authentication and task tracking.
-                    Built using Flask, MySQL and HTML/CSS.
-                </p>
+                <ul>
+                    <li>User login and authentication</li>
+                    <li>Task creation and deletion</li>
+                    <li>Flask backend with database</li>
+                </ul>
 
                 <div class="project-links">
-
-                    <a href="https://github.com/anupam311/To_Do_Flask_App" target="_blank">
-                        GitHub
-                    </a>
-
-                    <a href="https://to-do-flask-app-4vev.onrender.com/" target="_blank">
-                        Live Demo
-                    </a>
-
+                    <a href="https://github.com/anupam311/To_Do_Flask_App" target="_blank">GitHub</a>
+                    <a href="https://to-do-flask-app-4vev.onrender.com/" target="_blank">Live Demo</a>
                 </div>
 
             </div>
@@ -170,55 +187,81 @@
 
                 <h3>Campus Maintenance Portal</h3>
 
-                <p>
-                    Web application for managing campus maintenance complaints
-                    with ticket system and admin management.
-                </p>
+                <ul>
+                    <li>Complaint ticket system</li>
+                    <li>Admin panel</li>
+                    <li>Flask + MySQL backend</li>
+                </ul>
 
                 <div class="project-links">
-
-                    <a href="https://github.com/anupam311/Campus-Maintenance-Portal" target="_blank">
-                        GitHub
-                    </a>
-
-                    <a href="https://campus-maintenance-portal.onrender.com" target="_blank">
-                        Live Demo
-                    </a>
-
+                    <a href="https://github.com/anupam311/Campus-Maintenance-Portal" target="_blank">GitHub</a>
+                    <a href="https://campus-maintenance-portal.onrender.com" target="_blank">Live Demo</a>
                 </div>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- CONTACT -->
+<!-- JOURNEY -->
 
-    <section class="contact section" id="contact">
+<section id="journey" class="section">
+
+    <div class="container">
+
+        <h2>My Journey</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>2021</h3>
+                <p>Began Learning HTML for web development.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>2022</h3>
+                <p>Began learning python for basic backend logic building.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>2023</h3>
+                <p>Began learning MYSQL for database management.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>2025</h3>
+                <p>Started B.Tech. in Artificial Intelligence and Machie Learning.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>2026</h3>
+                <p>Began learning flask for backend development. Built multiple full-stack Flask applications.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="section">
+
+    <div class="container">
 
         <h2>Contact Me</h2>
 
         <form id="contactForm">
 
-            <input
-                type="text"
-                placeholder="Your Name"
-                required
-            >
-
-            <input
-                type="email"
-                placeholder="Your Email"
-                required
-            >
-
-            <textarea
-                rows="4"
-                placeholder="Your Message"
-                required
-            ></textarea>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
 
             <button class="btn" type="submit">
                 Send Message
@@ -226,15 +269,30 @@
 
         </form>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <footer>
-        © 2026 Anupam | Built with HTML, CSS & JavaScript
-    </footer>
+<footer>
+
+    <div class="container footer-container">
+
+        <p>© 2026 Anupam</p>
+
+        <div class="footer-links">
+
+            <a href="https://github.com/anupam311">GitHub</a>
+            <a href="https://linkedin.com">LinkedIn</a>
+
+        </div>
+
+    </div>
+
+</footer>
 
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 
