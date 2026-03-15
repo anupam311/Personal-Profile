@@ -226,8 +226,12 @@ nav a:hover {
 
 /* Timeline */
 
+#journey {
+    margin: 0 60px;
+}
+
 .timeline {
-    max-width: 600px;
+    max-width: 900px;
     margin: auto;
     text-align: left;
 }
